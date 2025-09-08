@@ -25,6 +25,15 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(movement * moveSpeed, ForceMode.Force);
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Goal"))
+        {
+            Debug.Log("You Win");
+        }
+    }
+
+
     // Update is called once per frame
     void Update()
     {

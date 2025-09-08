@@ -755,6 +755,7 @@ GameObject:
   - component: {fileID: 820032332}
   - component: {fileID: 820032336}
   - component: {fileID: 820032331}
+  - component: {fileID: 820032337}
   m_Layer: 0
   m_Name: Trap
   m_TagString: Untagged
@@ -875,6 +876,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &820032337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820032329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b221b16216f591b499e9cf83019bfa8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 100
 --- !u!1 &929010059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1468,6 +1482,7 @@ GameObject:
   - component: {fileID: 1628865221}
   - component: {fileID: 1628865220}
   - component: {fileID: 1628865225}
+  - component: {fileID: 1628865226}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1482,7 +1497,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628865219}
-  m_Material: {fileID: 13400000, guid: 0e475ae8d14948a4086ddcee74f9b349, type: 2}
+  m_Material: {fileID: 13400000, guid: 4adf85f051351984a95a9a1086a17af9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1570,7 +1585,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628865219}
   serializedVersion: 4
-  m_Mass: 0.2
+  m_Mass: 1
   m_Drag: 0.4
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1589,6 +1604,19 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 3
+--- !u!114 &1628865226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628865219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac0209987bac5c4aaf56ccba00db1f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
 --- !u!1 &1778718006
 GameObject:
   m_ObjectHideFlags: 0
